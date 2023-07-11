@@ -1,0 +1,148 @@
+.mainNav {
+  padding-top: 3rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  margin: auto 0;
+  cursor: pointer;
+}
+
+.img {
+  width: 42.7px;
+  height: 40.77px;
+  top: 5.6px;
+}
+
+.left h1 {
+  color: rgba(255, 255, 255, 1);
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 6px;
+  font-size: 26px;
+}
+
+.right {
+  display: flex;
+  color: white;
+}
+
+.right ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.right ul li {
+  text-decoration: none;
+  list-style: none;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: auto 0;
+  cursor: pointer;
+}
+
+.btn {
+  width: 250px;
+  height: 50px;
+  margin-left: 2rem;
+  border-radius: 64px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  font-family: Space Grotesk;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+
+.btn button {
+  background: transparent;
+  color: white;
+  border: none;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.outerHam {
+  display: flex;
+  gap: 1rem;
+}
+
+.hambarger {
+  color: rgba(237, 30, 121, 1);
+  font-size: 30px;
+  display: none;
+}
+
+@media only screen and (max-width: 970px) {
+  .hambarger {
+    display: block;
+    margin: auto;
+  }
+
+  .right ul {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .mainNav {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .btn {
+    width: 200px;
+    height: 40px;
+    margin: auto;
+    margin-left: 10px;
+  }
+
+  .btn button {
+    font-size: 10px;
+  }
+
+  .img {
+    width: 26.5px;
+    height: 26px;
+    top: 5.6px;
+  }
+
+  .left h1 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+    .btn {
+        width: 190px;
+        height: 35px;
+        font-size: 8px;
+    }
+  }
+
+@media only screen and (max-width: 340px) {
+  .btn {
+    display: none;
+  }
+}
