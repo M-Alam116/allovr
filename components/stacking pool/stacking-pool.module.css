@@ -1,0 +1,93 @@
+.container {
+  background: radial-gradient(
+    43.97% 32.61% at 52.4% 0%,
+    rgba(237, 30, 121, 0.65) 0%,
+    rgba(237, 30, 121, 0.4) 41.49%,
+    rgba(237, 30, 121, 0) 100%
+  );
+  height: 80rem;
+  width: 100%;
+  padding-top: 5rem;
+}
+
+.stacking {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  gap: 24px;
+}
+
+.content {
+  width: 50%;
+}
+
+.content h1 {
+  font-family: "Work Sans";
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 77px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+
+.content h2 {
+  font-family: "Work Sans";
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: -0.08em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 1rem;
+}
+
+.content p {
+  font-family: "Work Sans";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  color: rgba(209, 213, 221, 1);
+}
+
+.content span {
+  font-weight: 700;
+  color: var(--yellow);
+}
+
+.btns {
+  display: flex;
+  gap: 40px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .stacking {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .content {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .container {
+    margin-top: 6rem;
+  }
+
+  .btns {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .content h1 {
+    font-size: 40px;
+  }
+}

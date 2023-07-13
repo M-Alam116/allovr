@@ -1,16 +1,13 @@
 .mainStack {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 5rem;
-  position: absolute;
-  top: 720px;
-  right: 8%;
-  left: 8%;
 }
 
 .stack {
-  width: 620px;
-  height: 470px;
+  width: 650px;
+  height: 490px;
   border-radius: 16px;
   background: rgba(16, 16, 20, 1);
   font-family: "Work Sans";
@@ -22,11 +19,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 805px;
+  right: 5%;
+  align-items: center;
 }
 
 .stackLeft {
   color: white;
-  margin-top: 4rem;
+  margin-left: 5rem;
 }
 
 .stackLeft p {
@@ -95,7 +96,42 @@
 }
 
 .btns {
-    display: flex;
-    gap: 1.5rem;
-    margin-top: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 1260px) {
+  .mainStack {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stack {
+    width: 500px;
+    position: static;
+    height: 380px;
+    margin-bottom: 2rem;
+    font-size: 40px;
+  }
+
+  .stackLeft {
+    margin-left: 1rem;
+  }
+
+  .btns {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .stackLeft {
+    margin-left: 0;
+  }
+
+  .stack {
+    width: 85%;
+  }
 }

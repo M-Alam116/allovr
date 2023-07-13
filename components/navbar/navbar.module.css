@@ -13,7 +13,7 @@
 }
 
 .img {
-  width: 42.7px;
+  width: 150px;
   height: 40.77px;
   top: 5.6px;
 }
@@ -94,7 +94,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 970px) {
+@media only screen and (max-width: 1003px) {
   .hambarger {
     display: block;
     margin: auto;
@@ -123,7 +123,7 @@
   }
 
   .img {
-    width: 26.5px;
+    width: 100px;
     height: 26px;
     top: 5.6px;
   }
@@ -135,13 +135,13 @@
 
 @media only screen and (max-width: 460px) {
     .btn {
-        width: 190px;
+        width: 180px;
         height: 35px;
         font-size: 8px;
     }
   }
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 368px) {
   .btn {
     display: none;
   }

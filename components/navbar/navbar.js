@@ -19,12 +19,12 @@ export default function Navbar() {
       <div className={classes.left}>
         <Image
           src="/images/logo.png"
-          width={170}
+          width={150}
           height={40}
           alt="logo"
           className={classes.img}
         />
-        <h1>ALLOVR</h1>
+        {/* <h1>ALLOVR</h1> */}
       </div>
       <div className={classes.right}>
         <ul>

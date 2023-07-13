@@ -1,22 +1,20 @@
 .heroMain {
   background-color: #070707;
-  height: 100rem;
+  height: 55rem;
 }
 
 .hero {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: space-between;
   position: absolute;
   top: 0;
   z-index: 0;
   width: 100%;
-  height: 50rem;
+  height: 44rem;
 }
 
 .heroLeft {
-  width: 45%;
-  margin-top: 11rem;
+  margin-top: 15rem;
   margin-left: 5rem;
 }
 
@@ -46,17 +44,80 @@
 
 .heroRight {
   background: transparent;
-  width: 55%;
+  padding-top: 3rem;
   background: radial-gradient(
     34.62% 63.65% at 100% 47.5%,
     #ed1e79 0%,
     rgba(237, 30, 121, 0) 100%
   );
+  height: 55rem;
 }
 
 .illustration {
-  width: 100%;
-  height: 100%;
+  width: 50rem;
+  height: 53rem;
 }
 
+@media only screen and (max-width: 1260px) {
+  .heroMain {
+    height: 90rem;
+  }
 
+  .hero {
+    flex-wrap: wrap;
+  }
+
+  .heroLeft {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .heroLeft h1 {
+    font-size: 72px;
+    line-height: 82px;
+  }
+  .heroLeft span {
+    font-size: 72px;
+  }
+
+  .heroLeft p {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .heroRight {
+    background: radial-gradient(
+      100.59% 29.94% at 50% 100%,
+      #ed1e79 0%,
+      rgba(237, 30, 121, 0) 100%
+    );
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .illustration {
+    width: 100%;
+    height: 100%;
+  }
+
+  .heroLeft {
+    padding: 0 5px;
+  }
+
+  .heroLeft h1 {
+    text-align: center;
+  }
+
+  .heroLeft span {
+    text-align: center;
+  }
+
+  .heroLeft p {
+    text-align: center;
+  }
+}
