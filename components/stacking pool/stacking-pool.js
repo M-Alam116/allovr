@@ -1,3 +1,4 @@
+import Footer from "../footer/footer";
 import Button from "../ui/button";
 import Pool from "./pool";
 import classes from "./stacking-pool.module.css";
@@ -62,6 +63,7 @@ export default function StackingPool() {
         ))}
       </div>
       <Button text={"LOAD MORE ..."} styles={loadBtn}/>
+      <Footer />
     </section>
   );
 }
