@@ -18,6 +18,18 @@ export default function StackingPool() {
     padding: "0 16px",
   };
 
+  const loadBtn = {
+    backgroundColor: "transparent",
+    color: "white",
+    border: "2px solid white",
+    width: "200px",
+    height: "56px",
+    padding: "16px 40px 16px 40px",
+    fontSize: "16px",
+    fontWight: 500,
+    margin: 'auto'
+  };
+
   return (
     <section className={classes.container}>
       <div className={classes.bg}></div>
@@ -49,6 +61,7 @@ export default function StackingPool() {
           />
         ))}
       </div>
+      <Button text={"LOAD MORE ..."} styles={loadBtn}/>
     </section>
   );
 }

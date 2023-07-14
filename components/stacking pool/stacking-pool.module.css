@@ -75,7 +75,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100%;
   margin: 3rem 0;
 }
@@ -107,10 +107,5 @@
 
   .content h1 {
     font-size: 40px;
-  }
-
-  .pool {
-    justify-content: center;
-    margin: 0;
   }
 }

@@ -9,6 +9,7 @@ export default function Pool(props) {
     width: "89px",
     height: "41px",
     padding: "0 16px",
+    fontSize: '14px'
   };
 
   const btn2 = {
@@ -18,6 +19,7 @@ export default function Pool(props) {
     width: "126px",
     height: "41px",
     padding: "0 16px",
+    fontSize: '14px'
   };
 
   return (
@@ -38,8 +40,8 @@ export default function Pool(props) {
         </div>
       </div>
       <p>
-        Available Slots : <span className={classes.slotStyle}>{slot}</span>
-        Slots
+        Available Slots : <span className={classes.slotStyle}>{slot} </span>
+         Slots
       </p>
       <hr style={{ width: "100%", opacity: 0.2, margin: "15px 0" }}></hr>
       <h2 className={classes.linkStyle}>{link}</h2>
