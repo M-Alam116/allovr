@@ -1,5 +1,7 @@
 import Button from "../ui/button";
+import Pool from "./pool";
 import classes from "./stacking-pool.module.css";
+import data from "@/lib/data";
 export default function StackingPool() {
   const btn1 = {
     color: "white",
@@ -18,6 +20,7 @@ export default function StackingPool() {
 
   return (
     <section className={classes.container}>
+      <div className={classes.bg}></div>
       <div className={classes.stacking}>
         <div className={classes.content}>
           <h1>Staking pools</h1>
@@ -33,6 +36,18 @@ export default function StackingPool() {
           <Button text={"TRIGGER INFLATION RUN"} styles={btn1} />
           <Button text={"REGISTER POOL"} styles={btn2} />
         </div>
+      </div>
+      <div className={classes.pool}>
+        {data.map((pool) => (
+          <Pool
+            title={pool.title}
+            stacked={pool.stacked}
+            owed={pool.owed}
+            slot={pool.slot}
+            link={pool.link}
+            reBalance={pool.reBalance}
+          />
+        ))}
       </div>
     </section>
   );
