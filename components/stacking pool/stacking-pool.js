@@ -28,13 +28,13 @@ export default function StackingPool() {
     padding: "16px 40px 16px 40px",
     fontSize: "16px",
     fontWight: 500,
-    margin: 'auto'
+    margin: "auto",
   };
 
   return (
-    <section className={classes.container}>
-      <div className={classes.bg}></div>
+    <section className={classes.container} id="stacking">
       <div className={classes.stacking}>
+        <div className={classes.bg}></div>
         <div className={classes.content}>
           <h1>Staking pools</h1>
           <p>
@@ -62,7 +62,7 @@ export default function StackingPool() {
           />
         ))}
       </div>
-      <Button text={"LOAD MORE ..."} styles={loadBtn}/>
+      <Button text={"LOAD MORE ..."} styles={loadBtn} />
       <Footer />
     </section>
   );

@@ -18,7 +18,7 @@ export default function Work() {
   };
 
   return (
-    <section className={classes.container}>
+    <section className={classes.container} id="working">
       <div className={classes.upper}>
         <div className={classes.left}>
           <h1>How does it work?</h1>

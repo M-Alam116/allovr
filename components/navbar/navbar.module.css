@@ -4,10 +4,12 @@
   padding-right: 6rem;
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
 }
 
 .left {
-  display: flex;
   margin: auto 0;
   cursor: pointer;
 }
@@ -16,14 +18,6 @@
   width: 150px;
   height: 40.77px;
   top: 5.6px;
-}
-
-.left h1 {
-  color: rgba(255, 255, 255, 1);
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 6px;
-  font-size: 26px;
 }
 
 .right {
@@ -40,12 +34,10 @@
 .right ul li {
   text-decoration: none;
   list-style: none;
-  font-family: Work Sans;
+  font-family: 'Work Sans';
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
-  letter-spacing: 0em;
-  text-align: left;
   margin: auto 0;
   cursor: pointer;
 }
@@ -58,11 +50,10 @@
   border: 1px solid white;
   background: transparent;
   color: white;
-  font-family: Space Grotesk;
+  font-family: 'Space Grotesk';
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -91,10 +82,11 @@
 .hambarger {
   color: rgba(237, 30, 121, 1);
   font-size: 30px;
-  display: none;
+  display: none;;
 }
 
 @media only screen and (max-width: 1003px) {
+
   .hambarger {
     display: block;
     margin: auto;

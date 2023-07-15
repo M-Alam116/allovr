@@ -10,6 +10,7 @@
 .footer img {
   width: 250px;
   height: 60px;
+  cursor: pointer;
 }
 
 .footer p {
@@ -32,4 +33,5 @@
 .icon {
   width: 24px;
   height: 24px;
+  cursor: pointer;
 }

@@ -3,31 +3,65 @@ import classes from "./navbar.module.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import { useState } from "react";
+import Link from "next/link";
 export default function Navbar() {
   const [hambarger, setHambarger] = useState(true);
 
   const hambargerHandler = () => {
     setHambarger(!hambarger);
-    console.log(hambarger)
   };
 
-
   return (
-    <nav className={classes.mainNav}>
+    <div className={classes.mainNav}>
       <div className={classes.left}>
-        <Image
-          src="/images/logo.png"
-          width={150}
-          height={40}
-          alt="logo"
-          className={classes.img}
-        />
+        <Link href="#home" scroll={false}>
+          <Image
+            src="/images/logo.png"
+            width={200}
+            height={40}
+            alt="logo"
+            className={classes.img}
+          />
+        </Link>
       </div>
       <div className={classes.right}>
         <ul>
-          <li>About</li>
-          <li>How it Works</li>
-          <li>Stacking</li>
+          <li>
+            <Link
+              href="#about"
+              scroll={false}
+              style={{
+                textDecoration: "none",
+                color: "white",
+              }}
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#working"
+              scroll={false}
+              style={{
+                textDecoration: "none",
+                color: "white",
+              }}
+            >
+              How it Works
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#stacking"
+              scroll={false}
+              style={{
+                textDecoration: "none",
+                color: "white",
+              }}
+            >
+              Stacking
+            </Link>
+          </li>
         </ul>
         <div className={classes.outerHam}>
           <div className={classes.btn}>
@@ -40,7 +74,6 @@ export default function Navbar() {
             />
             <button>CONNECT PHANTOM WALLET</button>
           </div>
-
           {hambarger ? (
             <GiHamburgerMenu
               className={classes.hambarger}
@@ -54,6 +87,6 @@ export default function Navbar() {
           )}
         </div>
       </div>
-    </nav>
+    </div>
   );
 }

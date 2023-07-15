@@ -15,7 +15,7 @@ export default function Stacking() {
   };
 
   return (
-    <section className={classes.container}>
+    <section className={classes.container} id="about">
       <div className={classes.stacking}>
         <div className={classes.gradient}>
           {/* <Image src='/images/gradient.png' width={450} height={600} alt="gradient"/> */}

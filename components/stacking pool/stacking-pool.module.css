@@ -1,22 +1,7 @@
 .container {
   height: 100vh;
   width: 100%;
-  padding-top: 5rem;
-  position: relative;
-}
-
-.bg {
-  background: radial-gradient(
-    43.97% 32.61% at 52.4% 0%,
-    rgba(237, 30, 121, 0.65) 0%,
-    rgba(237, 30, 121, 0.4) 41.49%,
-    rgba(237, 30, 121, 0) 100%
-  );
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  z-index: -1;
+  /* padding-top: 5rem; */
 }
 
 .stacking {
@@ -24,6 +9,23 @@
   justify-content: space-around;
   align-items: end;
   gap: 24px;
+  position: relative;
+  padding-top: 4.5rem;
+  height: fit-content;
+}
+
+.bg {
+  background: radial-gradient(
+    70.97% 50.61% at 52.4% 0%,
+    rgba(237, 30, 121, 0.65) 0%,
+    rgba(237, 30, 121, 0.4) 41.49%,
+    rgba(237, 30, 121, 0) 100%
+  );
+  height: 50rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
 
 .content {
@@ -93,6 +95,18 @@
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  .bg {
+    background: radial-gradient(
+      90% 60% at 52.4% 0%,
+      rgba(237, 30, 121, 0.65) 0%,
+      rgba(237, 30, 121, 0.4) 41.49%,
+      rgba(237, 30, 121, 0) 100%
+    );
+    height: 70rem;
+  }
+}
+
 @media only screen and (max-width: 630px) {
   .container {
     margin-top: 6rem;
@@ -107,5 +121,15 @@
 
   .content h1 {
     font-size: 40px;
+  }
+
+  .bg {
+    background: radial-gradient(
+      90% 100% at 52.4% 0%,
+      rgba(237, 30, 121, 0.65) 0%,
+      rgba(237, 30, 121, 0.4) 41.49%,
+      rgba(237, 30, 121, 0) 100%
+    );
+    height: 70rem;
   }
 }

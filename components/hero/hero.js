@@ -1,6 +1,5 @@
 import Button from "../ui/button";
 import classes from ".//hero.module.css";
-import Navbar from "../navbar/navbar";
 import Image from "next/image";
 import { RiArrowRightDownLine } from "react-icons/ri";
 
@@ -12,8 +11,7 @@ export default function Hero() {
   };
 
   return (
-    <section className={classes.heroMain}>
-      <Navbar />
+    <section className={classes.heroMain} id="home">
       <div className={classes.hero}>
         <div className={classes.heroLeft}>
             <h1>
@@ -27,10 +25,11 @@ export default function Hero() {
             />
           </div>
         <div className={classes.heroRight}>
+          <div className={classes.heroGradient}></div>
           <Image
             src="/images/hero-illustration.png"
-            width={100}
-            height={100}
+            width={800}
+            height={600}
             alt="Hero illustration"
             className={classes.illustration}
           />
