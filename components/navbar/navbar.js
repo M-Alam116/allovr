@@ -8,11 +8,9 @@ export default function Navbar() {
 
   const hambargerHandler = () => {
     setHambarger(!hambarger);
+    console.log(hambarger)
   };
 
-  if (!hambarger){
-
-  }
 
   return (
     <nav className={classes.mainNav}>
@@ -24,7 +22,6 @@ export default function Navbar() {
           alt="logo"
           className={classes.img}
         />
-        {/* <h1>ALLOVR</h1> */}
       </div>
       <div className={classes.right}>
         <ul>

@@ -16,7 +16,6 @@ export default function Hero() {
       <Navbar />
       <div className={classes.hero}>
         <div className={classes.heroLeft}>
-          <div>
             <h1>
               Stake <span>ALLOVR.</span>
             </h1>
@@ -27,7 +26,6 @@ export default function Hero() {
               styles={buttonStyle}
             />
           </div>
-        </div>
         <div className={classes.heroRight}>
           <Image
             src="/images/hero-illustration.png"
